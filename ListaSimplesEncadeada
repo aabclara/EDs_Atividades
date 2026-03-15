@@ -68,11 +68,11 @@ class SingleLinkedList:
             self.tail = novo_no
         else:
             trav = self.head
-            for _ in range(index - 1):
+            for i in range(index - 1):
                 trav = trav.next
             novo_no.next = trav.next
             trav.next = novo_no
-        self.size += 1  # ← estava fora do método, agora está dentro com 8 espaços
+        self.size += 1 
 
     def __str__(self):
         """
